@@ -1,0 +1,263 @@
+.home {
+    position: relative;
+   
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+  
+}
+.rectangle-nav{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.education{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+section {
+    margin-top: 70px; /* Ensure sections are not overlapped by the navbar */
+}
+
+.circle-buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to new rows */
+    justify-content: center; /* Centers the items */
+    gap: 3.5rem; /* Space between items */
+}
+
+.circle-button {
+   
+    
+    font-size: 0.9rem;
+    color: rgb(44, 3, 44);
+   margin-top: 13px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+}
+.university-logo{
+    width: 50px; /* Adjust size */
+    height: auto;
+    border-radius: 30%; 
+}
+.circle-button-1 {
+   
+    
+    font-size: 0.9rem;
+   color: white;
+  
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.circle-button p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(44, 3, 44);
+    
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #0056b3, #004494);
+}
+
+
+.rectangle {
+    display: flex;
+    
+
+    width: 50%;
+    padding: 2rem;
+    background: lavender
+
+    ;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+.rectangle-2 {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 2rem;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+.rectangle-1 {
+    display: flex;
+    
+
+    width: 1%;
+    padding: 2rem;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+
+.profile-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.rectangle-color{
+    color:rgb(44, 3, 44);
+    font-size: larger;
+}
+.vibrating-hand {
+    font-size: 30px; /* Adjust size as needed */
+    display: inline-block;
+    animation: vibrate 2.5s infinite; /* Infinite loop */
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(2px, 2px); }
+  }
+  .typing-person {
+   
+    bottom: 10%;
+    left: 5%;
+    /* Adjust size */
+
+         /* Ensure no background color */
+    
+    
+}
+.hello-person {
+   
+    bottom: 10%;
+    left: 5%;
+    width: 30%; /* Adjust size */
+}
+.what-I-do {
+    color:  rgb(44, 3, 44);
+    background-color: lavender;
+    padding:3%;
+    margin: 3%;
+   
+    
+    width: 70%;
+
+   
+
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+.education-rectangle{
+    color:  rgb(44, 3, 44);
+    background-color: lavender;
+    padding:3%;
+    margin: 3%;
+   
+    
+    width: 50%;
+
+   
+
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+.education-rectangle-1{
+    color:  rgb(44, 3, 44);
+    background-color: lavender;
+    padding:3%;
+    margin: 3%;
+   
+    
+    width: 140%;
+
+   
+
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+}
+.typing{
+    width:150%;
+}
+.exp-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .typing-person {
+        width: 200px; /* Smaller size for mobile */
+        left: 2%;
+    }
+    .hello-person {
+        width: 200px; /* Smaller size for mobile */
+        left: 2%;
+    }
+}
+
+  
+
+
+ .rectangle h3 {
+    
+    color: rgb(44, 3, 44)
+    
+}
+
+
+.header-with-animation {
+    display: flex;
+    align-items: baseline;
+    gap: 1px; /* Adjust spacing between text and animation */
+}
+
+.header-with-animation span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.p-with-animation{
+    display: flex;
+    align-items: center;
+   
+}
+.p-with-animation span {
+    display: inline-block;
+    /* vertical-align: middle; */
+}
