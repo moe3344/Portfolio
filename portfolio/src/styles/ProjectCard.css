@@ -1,14 +1,28 @@
-.project-card {
+/* .project-card {
     background:lavender;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    max-width: 400px;
+   width:25%;
+   height:55vh;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px;
+    color: rgb(44, 3, 44);
+} */
+.project-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 25%;
+    height: 55vh;
+    border: 10px solid lavender;
+    position: relative; /* Make this a relative container */
     text-align: center;
     margin: 20px;
     color: rgb(44, 3, 44);
 }
-
 .project-header {
     position: relative;
     overflow: hidden;
@@ -50,7 +64,7 @@
     padding: 20px 20px 20px;
 }
 .project-link {
-    color: rgb(44, 3, 44);
+    color: rgb(112, 7, 112);
     font-weight: bold;
     text-decoration: none;
     margin: 10px 0;
@@ -59,7 +73,7 @@
 }
 
 .project-link:hover {
-    color: #c9ab28; 
+    color: #01451a; 
     cursor: pointer;/* Darker blue on hover */
 }
 
@@ -78,7 +92,7 @@
 
 ul {
     list-style: disc;
-    padding-left: 20px;
+    
     text-align: left;
     margin: 0;
     font-size: 0.9rem;
@@ -107,7 +121,7 @@ ul li {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 90%;
+    width: 80%;
     max-width: 500px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -121,7 +135,7 @@ ul li {
 
 .dialog-content ul {
     list-style: disc;
-    padding-left: 20px;
+    
     text-align: left;
     margin-bottom: 15px;
 }
@@ -136,6 +150,7 @@ ul li {
     background: #ff4d4d;
     color: white;
     padding: 10px 20px;
+   
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -145,12 +160,15 @@ ul li {
 .close-dialog-button:hover {
     background-color: #ff3333;
 }
-
-/* View Points Button */
 .view-points-button {
-    background: #550445;
+    position: absolute; /* Position the button absolutely */
+    bottom: 10px; /* 10px from the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust position to truly center */
+    background: rgb(179, 179, 243);
     color: white;
     padding: 10px 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -158,5 +176,13 @@ ul li {
 }
 
 .view-points-button:hover {
-    background-color: #0056b3;
+    background-color: #64182e;
 }
+@media (max-width: 768px) {
+    /* Adjust the home section */
+    .project-card  {
+        width: 90%;
+        height: 335px;
+        
+    
+    }}

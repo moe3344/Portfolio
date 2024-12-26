@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/ProjectCard.css';
 
-const ProjectCard = ({ headerImage, role, url, description, points }) => {
+const ProjectCard = ({ headerImage, role, url, description, points , source}) => {
     const [showDialog, setShowDialog] = useState(false);
 
     const handleOpenDialog = () => setShowDialog(true);
@@ -10,20 +10,22 @@ const ProjectCard = ({ headerImage, role, url, description, points }) => {
     return (
         <div className="project-card">
             {/* Header with Image */}
+            <h3>{role}</h3>
             <div className="project-header">
                 <img src={headerImage} alt="Header" className="header-image" />
             </div>
             
             {/* Body Content */}
             <div className="project-body">
-                <h3>{role}</h3>
+               
                 <a href={url} target="_blank" rel="noopener noreferrer" className="project-link">
-                    Sources Code
+                    {source}
                 </a>
                 <p className="description"><strong>{description}</strong></p>
                 <button onClick={handleOpenDialog} className="view-points-button">
                      Details
                 </button>
+               
             </div>
 
             {/* Dialog */}
@@ -42,6 +44,7 @@ const ProjectCard = ({ headerImage, role, url, description, points }) => {
                     </div>
                 </div>
             )}
+            
         </div>
     );
 };

@@ -1,10 +1,11 @@
 .home {
-    position: relative;
+    
    
     display: flex;
    
     justify-content: center;
     align-items: center;
+    
   
 }
 .rectangle-nav{
@@ -19,15 +20,13 @@
     display: flex;
     flex-direction: row;
 }
-section {
-    margin-top: 70px; /* Ensure sections are not overlapped by the navbar */
-}
+
 
 .circle-buttons-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to new rows */
     justify-content: center; /* Centers the items */
-    gap: 3.5rem; /* Space between items */
+    gap: 2rem; /* Space between items */
 }
 
 .circle-button {
@@ -35,8 +34,7 @@ section {
     
     font-size: 0.9rem;
     color: rgb(44, 3, 44);
-   margin-top: 13px;
-    margin-bottom: 25px;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,9 +77,9 @@ section {
 }
 
 .circle-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to bottom, #0056b3, #004494);
+    border-radius: 7px;
 }
 
 
@@ -89,9 +87,10 @@ section {
     display: flex;
     
 
-    width: 50%;
+    width: 40%;
     padding: 2rem;
-    background: lavender
+    background: white;
+    border: 10px solid lavender;
 
     ;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
@@ -119,6 +118,14 @@ section {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
     border-radius: 25px; /* Rounded corners */
     text-align: center;
+}
+.pro-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .profile-pic{
@@ -158,6 +165,7 @@ section {
     
     
 }
+
 .hello-person {
    
     bottom: 10%;
@@ -182,11 +190,12 @@ section {
 }
 .education-rectangle{
     color:  rgb(44, 3, 44);
-    background-color: lavender;
+    background-color: white;
     padding:3%;
     margin: 3%;
+    border: 10px solid lavender;
    
-    
+    margin-top: 5%;
     width: 50%;
 
    
@@ -198,9 +207,11 @@ section {
 }
 .education-rectangle-1{
     color:  rgb(44, 3, 44);
-    background-color: lavender;
+    background-color: white;
+    border: 10px solid, lavender;
     padding:3%;
     margin: 3%;
+    
    
     
     width: 140%;
@@ -247,7 +258,10 @@ section {
     align-items: baseline;
     gap: 1px; /* Adjust spacing between text and animation */
 }
-
+.pro-anim{
+    width: 20%;
+    
+}
 .header-with-animation span {
     display: inline-block;
     vertical-align: middle;
@@ -260,4 +274,132 @@ section {
 .p-with-animation span {
     display: inline-block;
     /* vertical-align: middle; */
+}
+a{
+    text-decoration: none;
+}
+section {
+    margin-top: 70px; /* Creates visual space above the section */
+    padding-top: 70px; /* Prevents content from being hidden under the navbar */
+    scroll-margin-top: 70px; /* Ensures the section aligns correctly when scrolling */
+  }
+  .icons{
+    display: flex;
+    
+    gap: 20px;
+  }
+  .projects-header{
+    padding: 5px;
+   
+    color: rgb(181, 181, 248);
+    font-size: 30px;
+    margin-left: 44%;
+    width: 11%;
+    border-radius: 5px;
+  }
+  .experienc-header{
+    padding: 5px;
+    
+color: rgb(181, 181, 248);
+    font-size: 30px;
+    margin-left: 43%;
+    width: 15%;
+    border-radius: 5px;
+    
+  }
+
+@media (max-width: 768px) {
+    /* Adjust the home section */
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .projects-header{
+        padding: 5px;
+       
+        /* color: rgb(44, 3, 44); */
+        color: rgb(181, 181, 248);
+        font-size: 30px;
+        margin-left: 33%;
+        width: 30%;
+      }
+      .experienc-header{
+        padding: 5px;
+       
+        color: rgb(181, 181, 248);
+        font-size: 30px;
+        margin-left: 26%;
+        width: 41%;
+        border-radius: 5px;
+        
+      }
+
+    /* Fix layout for circle buttons */
+    .circle-buttons-container {
+        gap: 1.5rem;
+    }
+
+    /* Circle button adjustments */
+    .circle-button {
+        font-size: 0.8rem;
+    }
+
+    /* Education Section */
+    .education {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    /* Education Rectangle */
+    .education-rectangle,
+    .education-rectangle-1 {
+        width: 80%; /* Full width for mobile */
+        margin: 10px 0;
+        padding: 15px;
+        
+    }
+
+    /* Who Am I Section */
+    .what-I-do {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .pro-anim{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .pro-anim-2{
+        width: 50%;
+        margin-left: 18%;
+    }
+
+    /* Profile Animation */
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    /* Pro Cards (Projects Section) */
+    .pro-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+
+    /* Individual Project Cards */
+    .project-card {
+        width: 90%; /* Full width for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Typing Animation */
+    .typing-person,
+    .hello-person {
+        width: 100%; /* Adjust width for mobile */
+        max-width: 200px; /* Limit max size */
+        margin-bottom: 20px;
+    }
+    .rectangle{
+        width: 70%;
+    }
 }

@@ -1,0 +1,39 @@
+/* Footer Styles */
+.footer {
+    background-color: white; /* Set background to white */
+    color: rgb(44, 3, 44); /* Text color */
+    text-align: center;
+    padding: 2rem 1rem;
+    border: 15px solid lavender; /* Add lavender border */
+    border-radius: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.social-link {
+    color: rgb(44, 3, 44); /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #550445; /* Slightly darker lavender */
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}

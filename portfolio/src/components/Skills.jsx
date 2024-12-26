@@ -29,7 +29,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills" id="skills">
+    <div className="skills" id="skills">
       
       <div className="skills-container">
         {skills.map((skill) => (
@@ -40,7 +40,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

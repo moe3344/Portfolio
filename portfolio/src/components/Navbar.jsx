@@ -5,11 +5,13 @@ const Navbar = () => {
       <nav className="navbar">
         
         <ul className="nav-buttons">
-          <li className="nav-item"><a href="#home">Home</a></li>
-          <li className="nav-item"><a href="#about">About</a></li>
-          <li className="nav-item"><a href="#skills">Skills</a></li>
-          <li className="nav-item"><a href="#projects">Projects</a></li>
-          <li className="nav-item"><a href="#contact">Contact</a></li>
+       
+        <a href="#education" className="item"><li className="nav-item">Education</li></a>
+       
+        <a href="#exp" className="item"> <li className="nav-item">Experience</li> </a>
+        <a href="#pro" className="item"> <li className="nav-item">Projects</li> </a>
+          <a href="#cont" className="item">  <li className="nav-item">Contact</li></a>
+          
         </ul>
       </nav>
     );
