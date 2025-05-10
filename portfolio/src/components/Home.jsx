@@ -19,6 +19,7 @@ import LotionStats from "../assets/LotionStats.jpg";
 import typingAnimation from '../assets/typingAnimation.json';
 import HelloAnimation from '../assets/Hello.json' 
 import EducationAnimation from '../assets/education.json'
+import awardanim from '../assets/awardanim.json'
 import profileAnimation from "../assets/profileAnimation - 1734919650761.json"
 import crazyAnimation from "../assets/crazyAnimation - 1734920013980.json"
 import hiAnimation from "../assets/hiAnimation.json"
@@ -77,6 +78,14 @@ const ProfileAnimation = () => {
         </div>
     );
 };
+const AwardAnimation = () => {
+    return (
+        <div >
+            <Lottie animationData={awardanim} loop={true}  style={{ background: 'transparent', width:'60%', marginTop: '55px', marginLeft:'35px' }} />
+        </div>
+    );
+};
+
 const HelloPerson = () => {
     return (
         <div className="hello-person">
@@ -210,7 +219,7 @@ const Home = () => {
             
                 <p><strong>University of Calgary</strong> </p>
                 <p>September 2021 - May 2026</p>
-                <p>Bachelor of Science in Software Engineering</p>
+                <p>Bachelor of Science in Software Engineering || GPA:3.5</p>
             </div>
             <EducationAnim/>
         </section>
@@ -241,21 +250,36 @@ const Home = () => {
         <ExperienceAnimation/>
         <div>
             <ExperienceCard
-                company="Freelancer"
+                company="Grid Foresight Lab"
                 
                 logo={freeLancer}
-                role="Front-End Developer"
-                location= "Remote"
-                dates="Jan 2023 – Present"
-                description=" Typescript, React, Tailwind"
+                role="Full-Stack Developer Intern"
+                location= "Hybrid"
+                dates="APril 2025 – Present"
+                description=" Node.js, Python, React, AWS, SQL"
                 points={[
-                    "Built responsive websites for Calgary-based companies like YYC Decorations and Ram Flooring using React, TypeScript, JavaScript, and Tailwind CSS.",
-                    "Delivered user-friendly designs, ensuring performance optimization and cross-browser compatibility.",
-                    "Collaborated with clients to meet branding and functionality needs, completing projects on time.",
+                    "Built an AI-powered app for Enamx and AESO to enable accurate forecasting, with sponsorship and funding provided by both companies.",
+                    "Developed the frontend using React to interact with backend services and APIs.",
+                    "Implemented a Node.js backend, connecting to Databases, managing Docker containers on EC2 instances with S3 storage, and handling scaling and concurrent users using AWS SNS",
+                    "Designed and deployed FastAPI-based Python API layers for efficient backend processing and integration.",
+                    "Built and automated a CI/CD pipeline using GitHub Actions for streamlined deployment and testing processes."
                     ]}
             />
         </div>
         </div>
+        </section>
+        <section className='education' id="education" >
+        <AwardAnimation/>
+        <div className='education-rectangle'>
+                <h1>Awards</h1>
+                <img src={UCalgaryLogo} alt="University of Calgary Logo" className="university-logo" />
+            
+                <p><strong>Gold Medal – Best Capstone Project</strong> </p>
+                <p>2024/2025</p>
+                <p> My capstone project, Smart Garden IoT, was recognized as the Best Software Project at the University of Calgary for
+                the 2024–2025 academic year, earning the Gold Medal among all graduating projects.</p>
+            </div>
+           
         </section>
        
         <section className id='pro' >
